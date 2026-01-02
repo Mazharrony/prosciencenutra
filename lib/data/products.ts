@@ -1,0 +1,160 @@
+import { Product } from '@/types/product';
+
+export const mockProducts: Product[] = [
+  {
+    id: 'prod-001',
+    name: 'Omega-3 Premium',
+    slug: 'omega-3-premium',
+    category: 'vitamins',
+    price: 29.99,
+    compareAtPrice: 39.99,
+    images: ['/images/omega3-1.jpg', '/images/omega3-2.jpg'],
+    description: 'High-quality omega-3 supplement sourced from wild-caught fish. Supports heart health, brain function, and joint mobility. Each capsule contains 1000mg of pure omega-3 fatty acids with EPA and DHA.',
+    shortDescription: 'Premium omega-3 for heart health and brain function',
+    ingredients: ['Fish Oil', 'Vitamin E', 'Gelatin', 'Glycerin', 'Purified Water'],
+    nutritionFacts: {
+      servingSize: '2 capsules',
+      servingsPerContainer: 30,
+      nutrients: [
+        { name: 'Total Fat', amount: '2g', dailyValue: '3%' },
+        { name: 'Omega-3 Fatty Acids', amount: '1000mg' },
+        { name: 'EPA (Eicosapentaenoic Acid)', amount: '600mg' },
+        { name: 'DHA (Docosahexaenoic Acid)', amount: '400mg' },
+      ],
+    },
+    benefits: ['Heart Health', 'Brain Function', 'Joint Support', 'Eye Health'],
+    usageInstructions: 'Take 2 capsules daily with meals. For best results, take consistently.',
+    inStock: true,
+    stockQuantity: 150,
+    tags: ['heart-health', 'brain', 'premium', 'omega-3'],
+    featured: true,
+    createdAt: new Date('2024-01-15'),
+    updatedAt: new Date('2024-01-15'),
+  },
+  {
+    id: 'prod-002',
+    name: 'Whey Protein Isolate',
+    slug: 'whey-protein-isolate',
+    category: 'protein',
+    price: 49.99,
+    compareAtPrice: 59.99,
+    images: ['/images/whey-1.jpg', '/images/whey-2.jpg'],
+    description: 'Premium whey protein isolate with 25g of protein per serving. Fast-absorbing, low in carbs and fat. Perfect for post-workout recovery and muscle building.',
+    shortDescription: 'Fast-absorbing whey protein for muscle recovery',
+    ingredients: ['Whey Protein Isolate', 'Natural Flavors', 'Stevia', 'Cocoa Powder'],
+    flavour: 'Chocolate',
+    nutritionFacts: {
+      servingSize: '1 scoop (30g)',
+      servingsPerContainer: 30,
+      nutrients: [
+        { name: 'Calories', amount: '110' },
+        { name: 'Protein', amount: '25g', dailyValue: '50%' },
+        { name: 'Total Carbohydrates', amount: '2g', dailyValue: '1%' },
+        { name: 'Total Fat', amount: '0.5g', dailyValue: '1%' },
+      ],
+    },
+    benefits: ['Muscle Recovery', 'Muscle Building', 'Weight Management', 'Post-Workout'],
+    usageInstructions: 'Mix 1 scoop with 8-10oz of water or milk. Consume within 30 minutes after workout.',
+    inStock: true,
+    stockQuantity: 80,
+    tags: ['protein', 'fitness', 'recovery', 'muscle-building'],
+    featured: true,
+    createdAt: new Date('2024-01-20'),
+    updatedAt: new Date('2024-01-20'),
+  },
+  {
+    id: 'prod-003',
+    name: 'Vitamin D3 + K2',
+    slug: 'vitamin-d3-k2',
+    category: 'vitamins',
+    price: 24.99,
+    images: ['/images/vitd3-1.jpg'],
+    description: 'Essential vitamin D3 combined with K2 for optimal bone health and immune support. Supports calcium absorption and bone density.',
+    shortDescription: 'Essential vitamins for bone health and immune support',
+    ingredients: ['Vitamin D3 (Cholecalciferol)', 'Vitamin K2 (MK-7)', 'MCT Oil', 'Gelatin'],
+    benefits: ['Bone Health', 'Immune Support', 'Calcium Absorption', 'Heart Health'],
+    usageInstructions: 'Take 1 capsule daily with a meal containing fat for better absorption.',
+    inStock: true,
+    stockQuantity: 200,
+    tags: ['bone-health', 'immune', 'vitamins', 'wellness'],
+    featured: false,
+    createdAt: new Date('2024-02-01'),
+    updatedAt: new Date('2024-02-01'),
+  },
+  {
+    id: 'prod-004',
+    name: 'Pre-Workout Energy',
+    slug: 'pre-workout-energy',
+    category: 'sports',
+    price: 34.99,
+    compareAtPrice: 44.99,
+    images: ['/images/preworkout-1.jpg'],
+    description: 'Powerful pre-workout supplement with caffeine, beta-alanine, and creatine. Boosts energy, focus, and endurance for intense training sessions.',
+    shortDescription: 'Boost energy and performance for your workouts',
+    ingredients: ['Caffeine Anhydrous', 'Beta-Alanine', 'Creatine Monohydrate', 'L-Citrulline', 'Natural Flavors'],
+    flavour: 'Fruit Punch',
+    benefits: ['Energy Boost', 'Increased Endurance', 'Better Focus', 'Muscle Performance'],
+    usageInstructions: 'Mix 1 scoop with 8-10oz of water 20-30 minutes before workout. Do not exceed 1 serving per day.',
+    inStock: true,
+    stockQuantity: 60,
+    tags: ['pre-workout', 'energy', 'performance', 'fitness'],
+    featured: true,
+    createdAt: new Date('2024-02-10'),
+    updatedAt: new Date('2024-02-10'),
+  },
+  {
+    id: 'prod-005',
+    name: 'Probiotic Complex',
+    slug: 'probiotic-complex',
+    category: 'wellness',
+    price: 32.99,
+    images: ['/images/probiotic-1.jpg'],
+    description: 'Advanced probiotic formula with 50 billion CFU and 10 different strains. Supports digestive health and immune function.',
+    shortDescription: 'Advanced probiotic for digestive and immune health',
+    ingredients: ['Probiotic Blend (50 Billion CFU)', 'Prebiotic Fiber', 'Vegetable Cellulose'],
+    benefits: ['Digestive Health', 'Immune Support', 'Gut Balance', 'Overall Wellness'],
+    usageInstructions: 'Take 1 capsule daily on an empty stomach, preferably in the morning.',
+    inStock: true,
+    stockQuantity: 120,
+    tags: ['probiotic', 'digestive', 'immune', 'wellness'],
+    featured: false,
+    createdAt: new Date('2024-02-15'),
+    updatedAt: new Date('2024-02-15'),
+  },
+  {
+    id: 'prod-006',
+    name: 'Multivitamin Complete',
+    slug: 'multivitamin-complete',
+    category: 'vitamins',
+    price: 27.99,
+    images: ['/images/multivitamin-1.jpg'],
+    description: 'Comprehensive multivitamin with essential vitamins and minerals. Supports overall health, energy, and wellness.',
+    shortDescription: 'Complete daily multivitamin for overall health',
+    ingredients: ['Vitamin A', 'Vitamin C', 'Vitamin D', 'Vitamin E', 'B-Complex Vitamins', 'Minerals'],
+    benefits: ['Overall Health', 'Energy Support', 'Immune Function', 'Daily Nutrition'],
+    usageInstructions: 'Take 1 tablet daily with a meal.',
+    inStock: true,
+    stockQuantity: 180,
+    tags: ['multivitamin', 'daily', 'wellness', 'nutrition'],
+    featured: false,
+    createdAt: new Date('2024-02-20'),
+    updatedAt: new Date('2024-02-20'),
+  },
+];
+
+export function getAllProducts(): Product[] {
+  return mockProducts;
+}
+
+export function getProductBySlug(slug: string): Product | undefined {
+  return mockProducts.find(product => product.slug === slug);
+}
+
+export function getFeaturedProducts(): Product[] {
+  return mockProducts.filter(product => product.featured);
+}
+
+export function getProductsByCategory(category: Product['category']): Product[] {
+  return mockProducts.filter(product => product.category === category);
+}
+
